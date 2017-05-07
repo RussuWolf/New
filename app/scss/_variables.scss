@@ -1,0 +1,64 @@
+// ***********************************
+// VARIABLES
+// ***********************************
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+// LAYOUT
+$container: 1024px;
+$break-menu: 640px;
+$small: 320px;
+
+
+// TYPOGRAPHY
+$font-logo: 'Source Sans Pro', sans-serif;
+$font-main: 'Segoe WP Light';
+$font-main-regular: 'Segoe WP';
+$font-weight-title: 400;
+$font-weight-body: 300;
+
+$font-size: 14px;
+
+$font-size-mobile: 17px;
+$h1: 2.882em;
+$h2: 1.823em;
+$h3: 1.353em;
+
+
+
+
+
+// COLORS main
+$logo-color: #000;
+$body-text: #6f7173;
+$white: #fff;
+$blue: #5094f2;
+$red: #d94748;
+$yellow: #ebbb11; 
+$grey-m: #6f7173;
+$grey-text: #b5b5b5;
+
+$black-m: #000;
+$grey-light: lighten( $grey-m, 30% );
+
+$color-body-bg: $grey-light; 
+$color1: #dd4b39;  // red
+$color2: #9CBE26;  // green
+
+  
+$nav-link-hover: #00AEEF; //blue
+$nav-text-active: #fff;
+
+$button-hover: darken( $blue, 10% );
+
+$notification-message: #0196bb;
+$notification-success: #9abb01;
+$notification-warning: #DD8903;
+$notification-alert: #CF493B;
+
+$panel: $grey-light;
+$panel-callout: $grey-light;
+
+// Other
+$default-border-radius: 5px;
+$border-radius: 50%;

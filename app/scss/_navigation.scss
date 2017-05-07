@@ -1,0 +1,87 @@
+// ***********************************
+// NAVIGATION
+// ***********************************
+.nav {
+	display: none;
+	text-align: center;
+
+}
+.nav-expanded {
+	display: block;
+	
+	li {
+		padding: 10px 0;
+		border-bottom: 1px solid $grey-light;
+		&:last-child {
+			border-bottom: none;
+			margin-bottom: -1.07em;
+		}
+		a {
+			color: $grey-m;
+		}
+
+	}
+}
+.menu-trigger {
+
+	@include span(6);
+	float: right;
+	text-align: center;
+	width: 3em;
+	height: 3em;
+	line-height: 4em;
+	background: $blue;
+	border-radius: $default-border-radius;
+	color: $white;
+	.fa-bars {
+		font-size: 2em;
+
+	}
+}
+@include breakpoint($break-menu) {
+	.menu-trigger {
+		display: none;
+	}
+	.nav {
+		text-align: right;
+		line-height: 0;
+		display: block;
+
+		ul {
+			margin-bottom: 0;
+	    	margin-top: 1.57em;
+			@include clearfix;
+		}
+		li {
+			display: inline-block;
+			padding: 0 10px;
+			border: none;
+		}	
+		a {
+			color: $body-text;
+			display: block;
+			font-weight: $font-weight-body;
+			font-size: 1.429em;
+			line-height: 20px;
+			position: relative;
+			&:after {
+				position: absolute;
+				content: ""; 
+				width: 100%;
+				left: 0;
+				height: 0;
+				display: inline-block;
+				background-color: $blue;
+				bottom: -20px;
+			}
+			&:hover {
+				&:after {
+					bottom: -20px;
+					height: 4px;
+				}	
+
+			}
+		}
+
+	}
+}

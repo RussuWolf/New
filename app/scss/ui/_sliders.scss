@@ -1,0 +1,28 @@
+// ***********************************
+// SLIDERS
+// ***********************************
+
+.slider-wrap {
+	@include span(12);
+	color: $white;
+	padding: 0;
+	.owl-nav {
+		position: absolute;
+		top: 45%;
+		width: 80%;
+		padding-left: 10% ;
+		padding-right: 10% ;
+		font-size: 3.57em;
+		> div {
+			display: inline-block;
+			opacity: .5;
+			transition: all .25s ease;
+			&:hover {
+				opacity: 1;
+			}
+		}
+		.owl-next {
+			float: right;
+		}
+	}		
+}

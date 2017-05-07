@@ -1,0 +1,291 @@
+// ***********************************
+// BASE
+// ***********************************
+
+body{
+	color: $body-text;
+	margin: 0;
+	background: $color-body-bg;
+	font-family: $font-main;
+	font-family: $font-main-regular;
+	font-size: $font-size-mobile;
+	font-weight: $font-weight-body;
+	height: auto;
+	@include breakpoint($break-menu){
+		font-size: $font-size;
+	}
+}
+
+
+// ***********************************
+// PAGE STRUCTURE
+// ***********************************
+
+//Susy Maps
+$susy: (
+	columns: 12,
+	gutters: 1/2,
+	math: fluid,
+	gutter-position: inside,
+);
+.wrapper {
+	@include container(1250px);
+	background: $white;
+}
+.page{
+	@include container($container); 
+	padding: 0 3%;
+} // page
+
+#header{
+	
+	#header-wrapper{
+		@include span(12);
+		margin-top: 1.176em;
+		margin-bottom: 0.882em;
+		.logo {
+		@include span(6);
+			.outer {
+				position: relative;
+				background: $blue;
+				height: 3em;
+				line-height: 3em;
+				width: 3em;
+				float: left;
+				margin-right: 1.118em;
+				border-radius: $border-radius;
+				font-family: $font-logo;
+				span {
+					position: absolute;
+					top: 20px;
+					left: 5px;
+					color: #fff;
+					font-size: 5.357em;
+				}	
+			}		
+			h1 {	
+				color: $logo-color;
+				font-size: $h1;
+				padding: 0;
+			}
+		}	
+		.nav {
+		@include span(12);
+
+		}	
+		
+		@include breakpoint($break-menu) {
+			margin-top: 1.714em;
+			margin-bottom: 1.428em;
+			.logo{
+			@include span(4);
+				.outer {
+					margin-right: 1.071em;
+					span {
+						top: 15px;
+					}
+				}
+				h1 {
+					font-size: 3em;
+				}
+			}
+			.nav {
+				@include span(8);
+			}
+		}
+
+
+	}	
+} // #header
+
+.slide-bg {
+	h3 {
+		padding-bottom: 1.764em;
+	}
+	.col-l {
+		@include span(5);
+		padding-top: 1.293em;
+	}
+	.col-r {
+		@include span(7);
+		padding-top: 1.293em;
+		padding-bottom: 1.059em;
+	}
+}
+.slider-wrap {
+	@include breakpoint($break-menu) {
+		.col-l{
+			padding-top: 2.714em;
+		}
+		img {
+
+			padding-left: 2.64em;
+		}
+		.col-r {
+			padding-top: 110px;	
+			padding-left: 5.5em;
+		}
+		h2 {
+			font-size: 3em;
+			line-height: 1.048em;
+		}
+		h3 {
+			font-size: 1.857em;
+			line-height: 1.69em;
+
+		}
+	}
+}
+
+.prod {
+	@include span(12);
+	margin-top: 20px;		
+	.col {
+		i {
+			width: 135px;
+			height: 135px;
+			border-radius: $border-radius;
+			line-height: 135px;
+			float: left;
+			text-align: center;
+			color: white;
+			margin-right: 25px;
+		}	
+		.fa-pencil {
+			background: $blue;
+		}
+		.fa-television {
+			background: $red;
+		}
+		.fa-shopping-basket {
+			background: $yellow;
+		}
+		hr {
+			margin-bottom: 1.647em;
+		}
+
+		a {
+			font-size: 2em;
+			line-height: 1.51em;
+			color: $blue;
+
+		}
+		p {
+			font-size: 1.117em;
+			margin-bottom: 2.352em;
+		}
+		@include breakpoint($break-menu) {
+		padding-top: 30px;	
+
+		@include span(4);	
+			text-align: center;
+			i {
+				width: 185px;
+				height: 185px;
+				line-height: 185px;
+				font-size: 6em;
+				float: none;
+
+
+			}
+			a {
+				display: block;
+				margin-top: 25px;
+				font-size: 1.428em;
+				line-height: 2.2em;
+			}
+			p {
+				font-size: 1em;
+			}
+			hr {
+				display: none;
+			}
+		
+		}
+		
+	}
+}
+
+.product {
+	.product_right, .product_left {
+		@include breakpoint($break-menu) {
+			@include span(6);
+			text-align: left;
+		}	
+	}
+.product_wrap {
+	margin-top: 20px;
+}
+	.product_left {
+		text-align: center;
+			h2 {
+				color: $grey-m;
+				font-size: 2.47em;
+				margin-bottom: 35px;
+
+			}
+		@include breakpoint($break-menu) {
+			h2 {
+				font-size: 3em;
+				line-height: 1.05em;
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.product_right {
+		text-align: left;
+		color: $grey-text;
+		h3 {
+			color: $grey-m;
+			margin: 25px 0 30px 0;
+			font-size: 2em;
+			line-height: 1.2941em;
+		}
+		p {
+			font-size: 1.2143em;
+			margin-bottom: 2.8125em;
+		}
+		@include breakpoint($break-menu) {
+			h2 {
+				margin-top: 45px;
+				margin-bottom: 10px;
+				font-size: 1.8571em;
+				line-height: 1.6858em; 
+
+			}
+			p {
+				font-size: 1.117em;
+				line-height: 2.4em;
+			}
+		}
+	}
+
+}
+
+///footer///
+
+footer {
+	hr {
+		margin: 0;
+	}
+	.footer_wrap{
+		@include span(12);
+		p {
+			margin: 0;
+			font-size: 0.883em;
+			line-height: 2.4em;
+		}
+		margin-top: 1.294em;
+		margin-bottom: 1.588em;
+		text-align: center;
+		@include breakpoint($break-menu) {
+		margin-top: 1.714em;
+		margin-bottom: 2.428em; 
+		p {
+			font-size: 1.072em;
+			line-height: 2.4em;
+			}
+		}
+	}
+	
+}

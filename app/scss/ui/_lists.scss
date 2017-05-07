@@ -1,0 +1,28 @@
+// ***********************************
+// LISTS
+// ***********************************
+
+ul li{
+	list-style: inside;		
+}
+
+ ul {
+    padding-left: 0;
+
+    li {
+	list-style: none;
+	}
+}
+
+hr {
+	background-color: $grey-light;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+
+
+
+
+
