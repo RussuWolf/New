@@ -1,7 +1,3 @@
-
-
-console.log('Primary file reporting in!');
-
 $(document).ready(function () {
 	
 	document.createElement( "picture" );
