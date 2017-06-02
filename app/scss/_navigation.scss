@@ -8,7 +8,6 @@
 }
 .nav-expanded {
 	display: block;
-	
 	li {
 		padding: 10px 0;
 		border-bottom: 1px solid $grey-light;
@@ -72,7 +71,6 @@
 				height: 0;
 				display: inline-block;
 				background-color: $blue;
-				bottom: -20px;
 			}
 			&:hover {
 				&:after {

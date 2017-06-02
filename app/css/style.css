@@ -823,7 +823,6 @@ tr:nth-child(odd) {
     height: 0;
     display: inline-block;
     background-color: #5094f2;
-    bottom: -20px;
   }
   .nav a:hover:after {
     bottom: -20px;
